@@ -1,0 +1,10 @@
+﻿@model PiattoViewModel
+<h1>Aggiungi Piatto</h1>
+<form method="post">
+
+<partial name="_form" model="Model" />
+
+<input type="submit" value="Crea Piatto" class="btn btn-primary" />
+<a class="btn btn-primary" asp-controller="Piatti" asp-action="Index">Indietro</a>
+
+</form>

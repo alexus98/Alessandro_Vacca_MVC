@@ -1,0 +1,14 @@
+﻿@model MenuViewModel
+<h1>Aggiungi Menu</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" class="form-control" />
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+
+    <input type="submit" value="Crea Piatto" class="btn btn-primary" />
+    <a class="btn btn-primary" asp-controller="Piatti" asp-action="Index">Indietro</a>
+
+</form>
